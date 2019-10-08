@@ -24,6 +24,7 @@ namespace CK.Tutorial.GraphQlApi.Repository
                 .Query(TableName)
                 .When(request.Columns.AnyItem(),
                     q => q.Select(request.Columns))
+                .When(request.IsActive.IsNotNull(), q => q.Where("IsActive", request.IsActive.ConvertToByte()))
                 .OrderBy("Id")
                 .ForPage(request.Page ?? request.DefaultPage, request.PageSize ?? request.DefaultPageSize)
                 .GetAsync<Company>();
@@ -39,7 +40,7 @@ namespace CK.Tutorial.GraphQlApi.Repository
                     q => q.Select(request.Columns))
                 .When(request.Id.HasValue, q => q.Where("Id", request.Id))
                 .When(request.Name.IsNotNullOrEmpty(), q => q.WhereContains("Name", request.Name))
-                .When(request.IsActive.IsTrue(), q => q.Where("IsActive", request.IsActive.ConvertToByte()))
+                .When(request.IsActive.IsNotNull(), q => q.Where("IsActive", request.IsActive.ConvertToByte()))
                 .OrderBy("Id")
                 .FirstOrDefaultAsync<Company>();
 

@@ -8,6 +8,11 @@ namespace CK.Tutorial.GraphQlApi.Common.Extension
         {
             return !string.IsNullOrEmpty(value);
         }
+
+        public static bool IsNotNull(this bool? value)
+        {
+            return value != null;
+        }
         
         public static bool IsTrue(this bool? value)
         {
