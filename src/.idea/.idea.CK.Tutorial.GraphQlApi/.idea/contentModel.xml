@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_CK.Tutorial.GraphQlApi.-1965786228.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="CK.Tutorial.GraphQlApi.Business" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CK.Tutorial.GraphQlApi.Business.csproj" t="IncludeRecursive" />
+        <e p="CompanyService.cs" t="Include" />
+        <e p="ICompanyService.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="CK.Tutorial.GraphQlApi.Business.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="CK.Tutorial.GraphQlApi.Common" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CK.Tutorial.GraphQlApi.Common.csproj" t="IncludeRecursive" />
+        <e p="Enum" t="Include">
+          <e p="Status.cs" t="Include" />
+        </e>
+        <e p="Extension" t="Include">
+          <e p="ArrayExtension.cs" t="Include" />
+          <e p="PrimitiveExtension.cs" t="Include" />
+        </e>
+        <e p="Model" t="Include">
+          <e p="CustomResultData.cs" t="Include" />
+          <e p="GraphQlQuery.cs" t="Include" />
+          <e p="RequestBase.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="CK.Tutorial.GraphQlApi.Common.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="CK.Tutorial.GraphQlApi.Entity" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CK.Tutorial.GraphQlApi.Entity.csproj" t="IncludeRecursive" />
+        <e p="Company.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="CK.Tutorial.GraphQlApi.Entity.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Product.cs" t="Include" />
+      </e>
+      <e p="CK.Tutorial.GraphQlApi.Model" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CK.Tutorial.GraphQlApi.Model.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="CK.Tutorial.GraphQlApi.Model.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Request" t="Include">
+          <e p="SearchCompany.cs" t="Include" />
+        </e>
+        <e p="Response" t="Include" />
+      </e>
+      <e p="CK.Tutorial.GraphQlApi.Repository" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CK.Tutorial.GraphQlApi.Repository.csproj" t="IncludeRecursive" />
+        <e p="CompanyRepository.cs" t="Include" />
+        <e p="ICompanyRepository.cs" t="Include" />
+        <e p="IRepositoryBase.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="CK.Tutorial.GraphQlApi.Repository.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="RepositoryBase.cs" t="Include" />
+      </e>
+      <e p="CK.Tutorial.GraphQlApi.sln" t="IncludeFlat" />
+      <e p="CK.Tutorial.GraphQlApi.Web" t="IncludeRecursive">
+        <e p="App_Code" t="Include">
+          <e p="Extensions" t="Include">
+            <e p="ApplicationCollection.cs" t="Include" />
+            <e p="GraphQlExtension.cs" t="Include" />
+            <e p="ServiceCollection.cs" t="Include" />
+          </e>
+          <e p="Query" t="Include">
+            <e p="TutorialQuery.cs" t="Include" />
+          </e>
+          <e p="Schema" t="Include">
+            <e p="RetailSchema.cs" t="Include" />
+          </e>
+          <e p="Types" t="Include">
+            <e p="CompanyGraphType.cs" t="Include" />
+          </e>
+        </e>
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CK.Tutorial.GraphQlApi.Web.csproj" t="IncludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="GraphQlController.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="CK.Tutorial.GraphQlApi.Web.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include" />
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
