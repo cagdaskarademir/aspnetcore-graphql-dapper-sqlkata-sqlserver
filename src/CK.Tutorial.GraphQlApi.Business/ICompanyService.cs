@@ -8,7 +8,7 @@ namespace CK.Tutorial.GraphQlApi.Business
 {
     public interface ICompanyService
     {
-        Task<IEnumerable<Company>> GetCompanies(SearchCompany request);
+        Task<IEnumerable<Company>> GetCompanies(SearchCompanies request);
         Task<Company> GetCompany(SearchCompany request);
     }
 }

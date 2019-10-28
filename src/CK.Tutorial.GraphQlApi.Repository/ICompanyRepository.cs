@@ -8,7 +8,7 @@ namespace CK.Tutorial.GraphQlApi.Repository
 {
     public interface ICompanyRepository
     {
-        Task<IEnumerable<Company>> GetCompanies(SearchCompany request);
+        Task<IEnumerable<Company>> GetCompanies(SearchCompanies request);
         Task<Company> GetCompany(SearchCompany request);
     }
 }

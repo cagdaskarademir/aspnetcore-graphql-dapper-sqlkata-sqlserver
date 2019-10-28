@@ -9,5 +9,15 @@ namespace CK.Tutorial.GraphQlApi.Common.Extension
         {
             return value != null && value.Any();
         }
+
+        public static bool AnyItem(this int[] value)
+        {
+            return value != null && value.Any();
+        }
+
+        public static bool AnyItem(this int?[] value)
+        {
+            return value != null && value.Any();
+        }
     }
 }

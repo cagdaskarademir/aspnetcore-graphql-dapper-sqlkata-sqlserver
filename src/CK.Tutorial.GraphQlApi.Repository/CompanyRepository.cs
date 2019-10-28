@@ -18,12 +18,13 @@ namespace CK.Tutorial.GraphQlApi.Repository
             _queryFactory = queryFactory;
         }
 
-        public async Task<IEnumerable<Company>> GetCompanies(SearchCompany request)
+        public async Task<IEnumerable<Company>> GetCompanies(SearchCompanies request)
         {
             var query = _queryFactory
                 .Query(TableName)
                 .When(request.Columns.AnyItem(),
                     q => q.Select(request.Columns))
+                .When(request.Ids.AnyItem(), q => q.WhereIn("Id", request.Ids))
                 .When(request.IsActive.IsNotNull(), q => q.Where("IsActive", request.IsActive.ConvertToByte()))
                 .OrderBy("Id")
                 .ForPage(request.Page ?? request.DefaultPage, request.PageSize ?? request.DefaultPageSize)

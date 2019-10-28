@@ -1,7 +1,5 @@
 using System;
 using System.Data.SqlClient;
-using System.Diagnostics;
-using System.Linq.Expressions;
 using CK.Tutorial.GraphQlApi.Business;
 using CK.Tutorial.GraphQlApi.Repository;
 using CK.Tutorial.GraphQlApi.Web.Query;
@@ -24,23 +22,21 @@ namespace CK.Tutorial.GraphQlApi.Web.Extensions
             IConfiguration configuration)
         {
             var databaseConnectionString = configuration.GetConnectionString("SqlServerDatabaseConnection");
-            
-            services.AddSingleton<QueryFactory>(
+
+            services.AddSingleton(
                 o => new QueryFactory(new SqlConnection(databaseConnectionString), new SqlServerCompiler())
                 {
                     Logger = compiled => { Console.WriteLine(compiled.ToString()); }
                 });
         }
-        
-        public static void AddRepositoryServices(this IServiceCollection services,
-            IConfiguration configuration)
+
+        public static void AddRepositoryServices(this IServiceCollection services)
         {
             services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
             services.AddTransient<ICompanyRepository, CompanyRepository>();
         }
-        
-        public static void AddBusinessServices(this IServiceCollection services,
-            IConfiguration configuration)
+
+        public static void AddBusinessServices(this IServiceCollection services)
         {
             services.AddTransient<ICompanyService, CompanyService>();
         }
@@ -50,8 +46,7 @@ namespace CK.Tutorial.GraphQlApi.Web.Extensions
         /// </summary>
         /// <param name="services"></param>
         /// <param name="configuration"></param>
-        public static void AddGraphQlServices(this IServiceCollection services,
-            IConfiguration configuration)
+        public static void AddGraphQlServices(this IServiceCollection services)
         {
             services.AddSingleton<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
             services.AddSingleton<ISchema, RetailSchema>();

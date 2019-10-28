@@ -32,9 +32,9 @@ namespace CK.Tutorial.GraphQlApi.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDatabaseEngineServices(Configuration);
-            services.AddRepositoryServices(Configuration);
-            services.AddBusinessServices(Configuration);
-            services.AddGraphQlServices(Configuration);
+            services.AddRepositoryServices();
+            services.AddBusinessServices();
+            services.AddGraphQlServices();
 
             services.AddControllers();
         }
@@ -54,7 +54,7 @@ namespace CK.Tutorial.GraphQlApi.Web
             app.UseAuthorization();
 
             app.UseGraphQlClient();
-            
+
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }

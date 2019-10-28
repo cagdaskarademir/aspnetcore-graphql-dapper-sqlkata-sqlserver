@@ -12,7 +12,6 @@ namespace CK.Tutorial.GraphQlApi.Web.Extensions
     {
         public static void UseGraphQlClient(this IApplicationBuilder builder)
         {
-            var retailSchema = builder.ApplicationServices.GetServices<ISchema>();
             builder.UseWebSockets();
 
             // use HTTP middleware for RetailSchema at path /graphql

@@ -14,8 +14,8 @@ namespace CK.Tutorial.GraphQlApi.Business
         {
             _companyRepository = companyRepository;
         }
-        
-        public Task<IEnumerable<Company>> GetCompanies(SearchCompany request)
+
+        public Task<IEnumerable<Company>> GetCompanies(SearchCompanies request)
         {
             return _companyRepository.GetCompanies(request);
         }
