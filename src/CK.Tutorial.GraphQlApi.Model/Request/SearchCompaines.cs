@@ -1,5 +1,4 @@
-﻿using CK.Tutorial.GraphQlApi.Common.Enum;
-using CK.Tutorial.GraphQlApi.Common.Model;
+﻿using CK.Tutorial.GraphQlApi.Common.Model;
 
 namespace CK.Tutorial.GraphQlApi.Model.Request
 {
