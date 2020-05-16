@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoothie.Web", "Smoothie.Web\Smoothie.Web.csproj", "{D4DD954B-3251-4B58-A0E7-892F34E76C05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoothie.Entity", "Smoothie.Entity\Smoothie.Entity.csproj", "{6DF491E3-7AE4-42CB-B03D-20F71A689B49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoothie.Repository", "Smoothie.Repository\Smoothie.Repository.csproj", "{6ED9B79E-5958-4C5C-A593-BB65DE8FBD65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoothie.Business", "Smoothie.Business\Smoothie.Business.csproj", "{A3F748C3-1DC5-4FBF-8354-7F27D5EC9F74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoothie.Common", "Smoothie.Common\Smoothie.Common.csproj", "{696D9059-E80A-403F-89C2-74F922F2AC53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoothie.Model", "Smoothie.Model\Smoothie.Model.csproj", "{E572C4E0-0775-48AB-9522-CEBBDB7544D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4DD954B-3251-4B58-A0E7-892F34E76C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4DD954B-3251-4B58-A0E7-892F34E76C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4DD954B-3251-4B58-A0E7-892F34E76C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4DD954B-3251-4B58-A0E7-892F34E76C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DF491E3-7AE4-42CB-B03D-20F71A689B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF491E3-7AE4-42CB-B03D-20F71A689B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DF491E3-7AE4-42CB-B03D-20F71A689B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DF491E3-7AE4-42CB-B03D-20F71A689B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ED9B79E-5958-4C5C-A593-BB65DE8FBD65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED9B79E-5958-4C5C-A593-BB65DE8FBD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED9B79E-5958-4C5C-A593-BB65DE8FBD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED9B79E-5958-4C5C-A593-BB65DE8FBD65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F748C3-1DC5-4FBF-8354-7F27D5EC9F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F748C3-1DC5-4FBF-8354-7F27D5EC9F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F748C3-1DC5-4FBF-8354-7F27D5EC9F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F748C3-1DC5-4FBF-8354-7F27D5EC9F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696D9059-E80A-403F-89C2-74F922F2AC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696D9059-E80A-403F-89C2-74F922F2AC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696D9059-E80A-403F-89C2-74F922F2AC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696D9059-E80A-403F-89C2-74F922F2AC53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E572C4E0-0775-48AB-9522-CEBBDB7544D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E572C4E0-0775-48AB-9522-CEBBDB7544D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E572C4E0-0775-48AB-9522-CEBBDB7544D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E572C4E0-0775-48AB-9522-CEBBDB7544D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

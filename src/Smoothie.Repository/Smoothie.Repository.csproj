@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
+        <PackageReference Include="SqlKata" Version="1.1.7" />
+        <PackageReference Include="SqlKata.Execution" Version="1.1.7" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Smoothie.Common\Smoothie.Common.csproj" />
+      <ProjectReference Include="..\Smoothie.Entity\Smoothie.Entity.csproj" />
+      <ProjectReference Include="..\Smoothie.Model\Smoothie.Model.csproj" />
+    </ItemGroup>
+</Project>

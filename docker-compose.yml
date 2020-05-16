@@ -9,6 +9,7 @@ services:
       - "80:80"
     depends_on:
       - smoothie_database
+    restart: always
   smoothie_database:
     image: "mcr.microsoft.com/mssql/server:2019-latest"
     container_name: smoothie_database
