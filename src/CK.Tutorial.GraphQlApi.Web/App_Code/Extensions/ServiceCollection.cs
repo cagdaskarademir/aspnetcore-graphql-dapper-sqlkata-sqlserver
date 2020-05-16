@@ -21,7 +21,7 @@ namespace CK.Tutorial.GraphQlApi.Web.Extensions
         public static void AddDatabaseEngineServices(this IServiceCollection services,
             IConfiguration configuration)
         {
-            var databaseConnectionString = configuration.GetConnectionString("SqlServerDatabaseConnection");
+            var databaseConnectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING") ?? configuration.GetConnectionString("SqlServerDatabaseConnection");
 
             services.AddSingleton(
                 o => new QueryFactory(new SqlConnection(databaseConnectionString), new SqlServerCompiler())

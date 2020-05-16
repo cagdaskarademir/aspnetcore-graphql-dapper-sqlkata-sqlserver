@@ -1,0 +1,20 @@
+version: "3.5"
+services:
+  smoothie_web:
+    build: .
+    environment:
+      DB_CONNECTION_STRING: "Server=smoothie_database;Database=GraphQLSample;User Id=sa;Password=sTroNg_Db_paSSword;"
+    container_name: smoothie_web
+    ports:
+      - "80:80"
+    depends_on:
+      - smoothie_database
+  smoothie_database:
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    container_name: smoothie_database
+    environment:
+      SA_PASSWORD: "sTroNg_Db_paSSword"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+volumes:
+  smoothie_data:            
