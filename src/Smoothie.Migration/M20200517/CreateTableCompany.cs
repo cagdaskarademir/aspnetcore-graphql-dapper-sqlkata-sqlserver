@@ -1,11 +1,12 @@
 using FluentMigrator;
+using Smoothie.Entity;
 
 namespace Smoothie.Migration.M20200517
 {
     [Migration(0)]
     public class CreateTableCompany : FluentMigrator.Migration
     {
-        private static string CompanyTableName => "Company";
+        private static string CompanyTableName => nameof(Company);
 
         public override void Up()
         {
@@ -13,7 +14,7 @@ namespace Smoothie.Migration.M20200517
                 .WithDescription("All Companies Data")
 
                 // Id Column
-                .WithColumn("Id")
+                .WithColumn(nameof(Company.Id))
                 .AsInt32()
                 .Identity()
                 .PrimaryKey("PK_Company_Id")
@@ -22,22 +23,22 @@ namespace Smoothie.Migration.M20200517
                 .Unique("UI_001_Company_Id")
 
                 // Name Column
-                .WithColumn("Name")
+                .WithColumn(nameof(Company.Name))
                 .AsString(200)
                 .NotNullable()
                 .WithColumnDescription("Name of Company")
 
                 // IsActive Column 
-                .WithColumn("IsActive")
+                .WithColumn(nameof(Company.IsActive))
                 .AsBoolean()
                 .WithDefaultValue(true)
                 .NotNullable()
                 .WithColumnDescription("Is Active Or Not of Company");
 
             Create.Index("I_Company_Name_IsActive").OnTable(CompanyTableName)
-                .OnColumn("Name")
+                .OnColumn(nameof(Company.Name))
                 .Descending()
-                .OnColumn("IsActive")
+                .OnColumn(nameof(Company.IsActive))
                 .Descending();
 
         }
