@@ -1,5 +1,6 @@
 using System;
 using System.Data.SqlClient;
+using FluentMigrator.Runner;
 using Smoothie.Business;
 using Smoothie.Repository;
 using GraphQL;
@@ -8,6 +9,8 @@ using GraphQL.Server;
 using GraphQL.Types;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Smoothie.Migration;
+using Smoothie.Migration.M20200517;
 using Smoothie.Web.Query;
 using Smoothie.Web.Schema;
 using Smoothie.Web.Types;
@@ -23,6 +26,13 @@ namespace Smoothie.Web.Extensions
         {
             var databaseConnectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING") ?? configuration.GetConnectionString("SqlServerDatabaseConnection");
 
+            services.AddFluentMigratorCore()
+                .ConfigureRunner(rb => rb
+                    .AddSqlServer()
+                    .WithGlobalConnectionString(databaseConnectionString)
+                    .ScanIn(typeof(BaseMigration).Assembly).For.Migrations())
+                .AddLogging(lb => lb.AddFluentMigratorConsole());
+            
             services.AddSingleton(
                 o => new QueryFactory(new SqlConnection(databaseConnectionString), new SqlServerCompiler())
                 {

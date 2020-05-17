@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoothie.Common", "Smoothie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoothie.Model", "Smoothie.Model\Smoothie.Model.csproj", "{E572C4E0-0775-48AB-9522-CEBBDB7544D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoothie.Migration", "Smoothie.Migration\Smoothie.Migration.csproj", "{65365EBE-D06E-4B9D-B25D-0B1FFB0549E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{E572C4E0-0775-48AB-9522-CEBBDB7544D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E572C4E0-0775-48AB-9522-CEBBDB7544D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E572C4E0-0775-48AB-9522-CEBBDB7544D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65365EBE-D06E-4B9D-B25D-0B1FFB0549E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65365EBE-D06E-4B9D-B25D-0B1FFB0549E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65365EBE-D06E-4B9D-B25D-0B1FFB0549E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65365EBE-D06E-4B9D-B25D-0B1FFB0549E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

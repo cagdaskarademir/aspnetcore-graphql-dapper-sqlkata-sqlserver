@@ -1,3 +1,4 @@
+using FluentMigrator.Runner;
 using GraphQL.Server;
 using GraphQL.Server.Ui.GraphiQL;
 using GraphQL.Server.Ui.Playground;
@@ -25,6 +26,13 @@ namespace Smoothie.Web.Extensions
 
             // use voyager middleware at default url /ui/voyager
             builder.UseGraphQLVoyager(new GraphQLVoyagerOptions());
+        }
+        
+        public static void UseDatabaseInitialize(this IApplicationBuilder builder)
+        {
+            var runner = builder.ApplicationServices.GetRequiredService<IMigrationRunner>();
+
+            runner.MigrateUp();
         }
     }
 }

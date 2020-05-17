@@ -47,6 +47,8 @@ namespace Smoothie.Web
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseDatabaseInitialize();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

@@ -5,6 +5,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FluentMigrator" Version="3.2.6" />
+        <PackageReference Include="FluentMigrator.Runner" Version="3.2.6" />
+        <PackageReference Include="FluentMigrator.Runner.SqlServer" Version="3.2.6" />
         <PackageReference Include="GraphQL" Version="2.4.0" />
         <PackageReference Include="GraphQL.Common" Version="1.0.3" />
         <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="3.4.0" />
@@ -18,6 +21,7 @@
         <ProjectReference Include="..\Smoothie.Business\Smoothie.Business.csproj" />
         <ProjectReference Include="..\Smoothie.Common\Smoothie.Common.csproj" />
         <ProjectReference Include="..\Smoothie.Entity\Smoothie.Entity.csproj" />
+        <ProjectReference Include="..\Smoothie.Migration\Smoothie.Migration.csproj" />
         <ProjectReference Include="..\Smoothie.Model\Smoothie.Model.csproj" />
         <ProjectReference Include="..\Smoothie.Repository\Smoothie.Repository.csproj" />
     </ItemGroup>
