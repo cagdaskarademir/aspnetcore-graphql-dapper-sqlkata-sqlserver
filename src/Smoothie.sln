@@ -14,6 +14,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoothie.Model", "Smoothie.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoothie.Migration", "Smoothie.Migration\Smoothie.Migration.csproj", "{65365EBE-D06E-4B9D-B25D-0B1FFB0549E2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{6AD1EADD-3341-45F4-B4B2-E14E8157FA10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{50AB363E-799A-4950-8C8B-02653B3C7A94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smoothie.Business.Test", "Test\Unit\Smoothie.Business.Test\Smoothie.Business.Test.csproj", "{09F89E4E-A20D-452F-9B30-7D04E289520B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +54,13 @@ Global
 		{65365EBE-D06E-4B9D-B25D-0B1FFB0549E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65365EBE-D06E-4B9D-B25D-0B1FFB0549E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65365EBE-D06E-4B9D-B25D-0B1FFB0549E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F89E4E-A20D-452F-9B30-7D04E289520B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F89E4E-A20D-452F-9B30-7D04E289520B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F89E4E-A20D-452F-9B30-7D04E289520B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F89E4E-A20D-452F-9B30-7D04E289520B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{50AB363E-799A-4950-8C8B-02653B3C7A94} = {6AD1EADD-3341-45F4-B4B2-E14E8157FA10}
+		{09F89E4E-A20D-452F-9B30-7D04E289520B} = {50AB363E-799A-4950-8C8B-02653B3C7A94}
 	EndGlobalSection
 EndGlobal

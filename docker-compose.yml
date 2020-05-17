@@ -3,7 +3,7 @@ services:
   smoothie_web:
     build: .
     environment:
-      DB_CONNECTION_STRING: "Server=smoothie_database;Database=GraphQLSample;User Id=sa;Password=sTroNg_Db_paSSword;"
+      DB_CONNECTION_STRING: "Server=smoothie_database;Database=Smoothie;User Id=sa;Password=sTroNg_Db_paSSword;"
     container_name: smoothie_web
     ports:
       - "80:80"
